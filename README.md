@@ -29,7 +29,7 @@ Open the folder corresponding to the problem's name (including [branincurrin](./
 python MCTS.py --data_id 0
 ```
 
-You can change the data_id with different initialization to have different runs. All the data come from differnet trials random sampling in the search space. 
+You can change the data_id with different initializations to have different runs. All the data come from differnet trials random sampling in the search space. 
 
 
 ## How to use LaMOO to optimize your own problems? 
