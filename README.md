@@ -79,11 +79,7 @@ of current samples in each search iteration.
 
 > From our experiments, we find that the RBF kernel performs slightly better than others. Thanks to the non-linearity of the polynomial and RBF kernels, their region partitions perform better compared to a linear one.
 
-
-Please reference the following publication when using this package. OpenReview <a href="https://openreview.net/pdf?id=FlwzVjfMryn">link</a>.
-
-
-###  other possible tunable parameters
+### Other possible tunable parameters
 
 > --degree (svm degree) 
 
@@ -93,6 +89,8 @@ Please reference the following publication when using this package. OpenReview <
 
 > --sample_num (sample numsbers per iteration)
 
+## Paper
+Please reference the following publication when using this package. OpenReview <a href="https://openreview.net/pdf?id=FlwzVjfMryn">link</a>.
 ```
 @inproceedings{
 zhao2022multiobjective,
