@@ -20,5 +20,24 @@ year={2022},
 url={https://openreview.net/forum?id=FlwzVjfMryn}
 }
 ```
+## Environment Requirements
+```
+python >= 3.8, PyTorch >= 1.8.1, gpytorch >= 1.5.1
+scipy, Botorch, Numpy, cma
+```
+### Extra Requirements for [Molecule Discovery](./molecule/)
+```
+networkx, RDKit >= 2019.03, Chemprop >= 1.2.0, scikit-learn==0.21.3
+```
 
+## Run LaMOO in different test functions (1 minute tutorial)
 
+Open the folder corresponding to the problem's name (including [branincurrin](./branincurrin/), [vehiclesafety](./vehiclesafety/), [Nasbench201](./nasbench/), [molecule](./molecule/), [molecule_obj3](./molecule_obj3/), and [molecule_obj4](./molecule_obj4/)). 
+
+### Evaluate Bayesian Optimization with LaMOO as meta-booster. 
+
+```
+python MCTS.py --data_id 0
+```
+
+You can change the data_id to have different runs. 
