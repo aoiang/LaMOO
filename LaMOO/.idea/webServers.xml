@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cde9cee4-019e-494a-8449-4110ec9682c5" name="cake-graphics.dyn.wpi.edu">
+        <fileTransfer accessType="SFTP" host="cake-graphics.dyn.wpi.edu" port="22" sshConfigId="527d6953-ff81-41f1-8bc3-0bf1e5434158" sshConfig="yiyangzhao@cake-graphics.dyn.wpi.edu:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
