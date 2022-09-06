@@ -83,6 +83,16 @@ of current samples in each search iteration.
 Please reference the following publication when using this package. OpenReview <a href="https://openreview.net/pdf?id=FlwzVjfMryn">link</a>.
 
 
+###  other possible tunable parameters
+
+> --degree (svm degree) 
+
+> --gamma ([defination](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html))
+
+> Leaf Size (Control the speed of tree growth, set [here](https://github.com/aoiang/LaMOO/blob/master/LaMOO/MCTS.py#L69))
+
+> --sample_num (sample numsbers per iteration)
+
 ```
 @inproceedings{
 zhao2022multiobjective,
