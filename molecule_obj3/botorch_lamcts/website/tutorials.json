@@ -1,0 +1,88 @@
+{
+  "Using BoTorch with Ax": [
+    {
+      "id": "custom_botorch_model_in_ax",
+      "title": "Using a custom BoTorch model"
+    }
+  ],
+  "Full Optimization Loops": [
+    {
+      "id": "closed_loop_botorch_only",
+      "title": "q-Noisy Constrained EI"
+    },
+    {
+      "id": "preference_bo",
+      "title": "Bayesian optimization with pairwise comparison data"
+    },
+    {
+      "id": "turbo_1",
+      "title": "Trust Region Bayesian Optimization (TuRBO)"
+    },
+    {
+      "id": "bo_with_warped_gp",
+      "title": "Bayesian optimization with input warping"
+    },
+    {
+      "id": "thompson_sampling",
+      "title": "Bayesian optimization with large-scale Thompson sampling"
+    }
+  ],
+  "Multi-Objective Bayesian Optimization": [
+    {
+      "id": "multi_objective_bo",
+      "title": "q-Expected Hypervolume Improvement and q-ParEGO"
+    },
+    {
+      "id": "constrained_multi_objective_bo",
+      "title": "Constrained q-Expected Hypervolume Improvement and q-ParEGO"
+    }
+  ],
+  "Bite-Sized Tutorials": [
+    {
+      "id": "fit_model_with_torch_optimizer",
+      "title": "Fitting a model using torch.optim"
+    },
+    {
+      "id": "compare_mc_analytic_acquisition",
+      "title": "Comparing analytic and MC Expected Improvement"
+    },
+    {
+      "id": "optimize_with_cmaes",
+      "title": "Acquisition function optimization with CMA-ES"
+    },
+    {
+      "id": "optimize_stochastic",
+      "title": "Acquisition function optimization with torch.optim"
+    },
+    {
+      "id": "batch_mode_cross_validation",
+      "title": "Using batch evaluation for fast cross-validation"
+    },
+    {
+      "id": "custom_acquisition",
+      "title": "Writing a custom acquisition function"
+    },
+    {
+      "id": "one_shot_kg",
+      "title": "The one-shot Knowledge Gradient acquisition function"
+    },
+    {
+      "id": "max_value_entropy",
+      "title": "The max-value entropy search acquisition function"
+    }
+  ],
+  "Advanced Usage": [
+    {
+      "id": "meta_learning_with_rgpe",
+      "title": "Meta-learning with RGPE"
+    },
+    {
+      "id": "vae_mnist",
+      "title": "High-dimensional optimization with VAEs"
+    },
+    {
+      "id": "multi_fidelity_bo",
+      "title": "Multi-fidelity Bayesian optimization with KG"
+    }
+  ]
+}

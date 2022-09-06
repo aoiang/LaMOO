@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+hgraph2graph.egg-info/PKG-INFO
+hgraph2graph.egg-info/SOURCES.txt
+hgraph2graph.egg-info/dependency_links.txt
+hgraph2graph.egg-info/top_level.txt
