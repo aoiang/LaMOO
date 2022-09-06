@@ -1,25 +1,13 @@
 # MULTI-OBJECTIVE OPTIMIZATION BY LEARNING SPACE PARTITIONS (LaMOO)
 
-LaMOO is a a novel multi-objective optimizer that learns a model from observed samples to partition the search space and then focus on promising regions that
+LaMOO is a novel multi-objective optimizer that learns a model from observed samples to partition the search space and then focus on promising regions that
 are likely to contain a subset of the Pareto frontier. So that existing solvers like Bayesian Optimizations (BO) can focus on promising subregions to mitigate the over-exploring issue.
 
 <p align="center">
 <img src='./LaMOO_workflow.png' width="800">
 </p>
 
-Please reference the following publication when using this package. OpenReview <a href="https://openreview.net/pdf?id=FlwzVjfMryn">link</a>.
 
-
-```
-@inproceedings{
-zhao2022multiobjective,
-title={Multi-objective Optimization by Learning Space Partition},
-author={Yiyang Zhao and Linnan Wang and Kevin Yang and Tianjun Zhang and Tian Guo and Yuandong Tian},
-booktitle={International Conference on Learning Representations},
-year={2022},
-url={https://openreview.net/forum?id=FlwzVjfMryn}
-}
-```
 ## Environment Requirements
 ```
 python >= 3.8, PyTorch >= 1.8.1, gpytorch >= 1.5.1
@@ -68,3 +56,41 @@ class MyProblem:
 ```
 
 2. We already pluged this class in our optimizer in MCTS.py and you are also free to initialize your function in MCTS.py line 561. Note that we only support to maximize f(x). If you would like to minimize f(x), please add a negative operator on your function. 
+
+
+## How to tune LaMOO? 
+###  **Cp**: exploration factor 
+> python MCTS.py --cp "your value"
+
+> We usually set Cp = 0.1 * max of Hypervolume of the problem . 
+
+> Cp controls the balance of exploration and exploitation. A larger Cp guides LaMOO to visit the sub-optimal regions more often.  a "rule of thumb" is to set the Cp to be roughly 10% of the maximum hypervolume. When maximum hypervolume is unknown, Cp can be dynamically set to 10% of the hypervolume
+of current samples in each search iteration. 
+
+###  **Node selection method**: Path(mcts) or Leaf
+> python MCTS.py --node_select "mcts"/"leaf"
+
+> Path: Traverse down the search tree to trace the current most promising search path and select the leaf node(Algorithm 1 in the paper).  
+> Leaf: LaMOO directly select the leaf node with the highest UCB value(Algorithm 2 in the paper). This variation may reduce the optimization cost escipally for the problem with large numbers of objectives. 
+
+###  **SVM kernel**: the type of kernels used by SVM
+
+> python MCTS.py --kernel "linear"/"poly"/rbf
+
+> From our experiments, we find that the RBF kernel performs slightly better than others. Thanks to the non-linearity of the polynomial and RBF kernels, their region partitions perform better compared to a linear one.
+
+
+Please reference the following publication when using this package. OpenReview <a href="https://openreview.net/pdf?id=FlwzVjfMryn">link</a>.
+
+
+```
+@inproceedings{
+zhao2022multiobjective,
+title={Multi-objective Optimization by Learning Space Partition},
+author={Yiyang Zhao and Linnan Wang and Kevin Yang and Tianjun Zhang and Tian Guo and Yuandong Tian},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=FlwzVjfMryn}
+}
+```
+
