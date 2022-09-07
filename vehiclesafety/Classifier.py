@@ -723,7 +723,7 @@ class Classifier():
             candidates, _ = optimize_acqf_list(
                 acq_function_list=acq_func_list,
                 bounds=standard_bounds,
-                num_restarts=5,
+                num_restarts=20,
                 raw_samples=1024,
                 options={"batch_limit": 1, "maxiter": 2},
                 lamcts_boundry=path,
