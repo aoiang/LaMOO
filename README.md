@@ -71,7 +71,7 @@ of current samples in each search iteration.
 > python MCTS.py --node_select "mcts"/"leaf"
 
 > Path: Traverse down the search tree to trace the current most promising search path and select the leaf node(Algorithm 1 in the paper).  
-> Leaf: LaMOO directly select the leaf node with the highest UCB value(Algorithm 2 in the paper). This variation may reduce the optimization cost escipally for the problem with large numbers of objectives. 
+> Leaf: LaMOO directly select the leaf node with the highest UCB value(Algorithm 2 in the paper). This variation may reduce the optimization cost especially for the problem with large numbers of objectives. 
 
 ###  **SVM kernel**: the type of kernels used by SVM
 
