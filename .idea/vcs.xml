@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LaMOO/pygmo2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/branincurrin/pygmo2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule/MOO_botorch/functions/hgraph2graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule/MOO_botorch/functions/multiobj_rationale" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule/MOO_botorch/moo_molecule_funcs/hgraph2graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule/MOO_botorch/moo_molecule_funcs/multiobj_rationale" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule/MOO_botorch/nasbench" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule/moo_molecule_funcs/hgraph2graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule/moo_molecule_funcs/multiobj_rationale" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule_obj3/moo_molecule_funcs/hgraph2graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule_obj3/moo_molecule_funcs/multiobj_rationale" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule_obj4/moo_molecule_funcs/hgraph2graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/molecule_obj4/moo_molecule_funcs/multiobj_rationale" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/nasbench301/nasbench301" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/nsga/moo_molecule_funcs/hgraph2graph" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/nsga/moo_molecule_funcs/multiobj_rationale" vcs="Git" />
+  </component>
+</project>
